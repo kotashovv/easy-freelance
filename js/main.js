@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // конечная дата
-    const deadline = new Date(new Date().getFullYear(), new Date().getMonth() + 1, 01,19);
+    const deadline = new Date(new Date().getFullYear(), new Date().getMonth() + 1, 01,24);
     // id таймера
     let timerId = null;
     // склонение числительных
@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
       place.forEach(function(item) {
         item.textContent = hours;
         if (hours > 12) {
-          item.textContent = 12;
-        } else if ( hours < 1) {
+          item.textContent = hours - 1;
+        } else if ( hours < 2) {
           item.textContent = 1;
         }
       })
