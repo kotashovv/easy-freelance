@@ -1,0 +1,11 @@
+//Ограничивающий контейнер (max-width container)
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.wrapper {
+    position: relative;
+}

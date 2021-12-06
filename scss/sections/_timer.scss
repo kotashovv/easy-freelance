@@ -1,0 +1,50 @@
+.timer  {
+    color: #fff;
+    position: relative;
+    >span {
+        position: absolute;
+        top: -20px;
+        right: 20px;
+        color: #e25757;
+        font-size: 17px;
+        line-height: 1.1;
+        font-family: $ms;
+        font-weight: 700;
+    }
+}
+
+.timer__items {
+    display: flex;
+    font-size: 48px;
+  }
+
+  .timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: $mb;
+    font-weight: 600;
+    font-size: 35px;
+    color: #fff;
+  }
+
+  .timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    right: 12px;
+    bottom: 0;
+    color: #fff;
+    font-family: $mr;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+  }
