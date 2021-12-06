@@ -1,0 +1,42 @@
+// обнуление Стилей
+
+@import 'sections/normalize';
+
+@import 'sections/grids';
+
+// шрифты
+@import 'sections/fonts';
+
+//Переменные
+@import 'sections/vars';
+
+//Интерфейс
+@import 'sections/interface';
+
+//Шапка сайта
+@import 'sections/timer';
+@import 'sections/header';
+
+
+//Содержимое страницы
+@import 'sections/welcome'; // Первый блок
+@import 'sections/results'; // блок результаты
+@import 'sections/work'; // блок как это работает
+@import 'sections/profile'; // блок ведущего
+@import 'sections/plan'; // блок расценок
+@import 'sections/feedback'; // блок отзывов
+@import 'sections/offer'; // блок предложения
+@import 'sections/faq'; // блок вопросов
+@import 'sections/garant'; // блок гарантии
+@import 'sections/last'; // заверщающий блок
+
+//Подвал сайта
+@import 'sections/footer';
+
+//Адаптив
+@import 'sections/adaptive';
+
+
+
+
+

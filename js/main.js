@@ -151,4 +151,14 @@ document.addEventListener('DOMContentLoaded', function () {
     var accBtn = document.querySelectorAll('.accordeon')
     var i;
 
+
+    var playBtn = document.querySelector('.play-btn');
+    var welcomeVideo = document.querySelector('.welcome-video');
+
+    playBtn.addEventListener('click', ()=> {
+      playBtn.classList.add('active');
+      welcomeVideo.play();
+      welcomeVideo.classList.add('active');
+      welcomeVideo.setAttribute("controls", "controls")
+    })
   });

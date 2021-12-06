@@ -1,0 +1,138 @@
+.work {
+    padding: 100px 0 70px;
+    background: #F9F9FF;
+    position: relative;
+    &::before {
+        content: url(assets/img/light.png);
+        position: absolute;
+        top: 20%;
+        z-index: 0;
+        pointer-events: none;
+        right: 15%;
+    }
+    // .work__title
+
+    &__title {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    // .work__body
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 130px;
+    }
+
+    // .work__item
+
+    &__item {
+        position: relative;
+        >span {
+            color: #fff;
+            background-color: #135ff6;
+            width: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            height: 65px;
+            font-family: $mb;
+            font-weight: 600;
+            margin: 0 auto;
+            border-radius: 50%;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 0;
+            line-height: 1.5;
+            font-size: 23px;
+            color: #000;
+            font-family: $mr;
+            font-weight: 400;
+            max-width: 280px;
+            text-align: center;
+            >span {
+                font-family: $mb;
+                font-weight: 600;
+            }
+        }
+        &:first-child {
+            &::before {
+                content: '.................................';
+                position: absolute;
+                top: 5px;
+                left: 200px;
+                font-size: 36px;
+                color: #135ff6;
+            }
+            >span {
+                &::before {
+                    content: url(assets/img/half-eclipse.png);
+                    position: absolute;
+                    top: -10px;
+                    left: -10px;
+                }
+            }
+        }
+        &:nth-child(2) {
+            transform: translateX(-20%);
+            &::before {
+                content: '.........................................';
+                position: absolute;
+                top: 5px;
+                left: 200px;
+                font-size: 36px;
+                color: #135ff6;
+            }
+            >span {
+                &::before {
+                    content: url(assets/img/half-eclipse.png);
+                    transform: rotate(90deg);
+                    position: absolute;
+                    top: -34px;
+                    left: 8px;
+                }
+            }
+        }
+        &:last-child {
+            >span {
+                &::before {
+                    content: url(assets/img/half-eclipse.png);
+                    transform: rotate(180deg);
+                    position: absolute;
+                    top: -15px;
+                    left: 30px;
+                }
+            }
+        }
+    }
+
+    // .work__action
+
+    &__action {
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        margin: 0 auto;
+        position: relative;
+        .main-btn {
+            
+        }
+        >span {
+            position: absolute;
+            bottom: -40px;
+            right: 0;
+            font-family: $mr;
+            font-weight: 400;
+            color: #e25757;
+            font-size: 20px;
+        }
+    }
+}
+.container {
+}
+
