@@ -1802,6 +1802,7 @@ template {
 
 .garant__text {
   max-width: 625px;
+  margin-right: 200px;
 }
 
 .garant__text p {
@@ -2359,14 +2360,16 @@ template {
     padding: 15px 10px;
     font-size: 18px;
   }
+  .garant__title {
+    padding-right: 32px;
+  }
   .garant__img {
-    display: none;
     z-index: 0;
     position: absolute;
-    top: 0%;
+    top: -17%;
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
-    right: -15%;
+    right: -20%;
   }
   .garant__img img {
     width: 100px;
@@ -2378,6 +2381,9 @@ template {
   .garant__img::after {
     width: 220px;
     height: 220px;
+  }
+  .garant__text {
+    margin-right: 0;
   }
   .last__title h2 {
     font-size: 36px;
